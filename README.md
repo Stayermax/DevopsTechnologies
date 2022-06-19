@@ -18,6 +18,7 @@ For example we can try to find posts on reddit connected to tweets.
 * Jenkins
 * Elastic search
 * BigQuery
+* Snowflake
 
 ## Theoretical architecture
 
@@ -31,3 +32,6 @@ For example we can try to find posts on reddit connected to tweets.
 * I don't know a thing about Jenkins
 * I don't know a thing about Elasticsearch
 
+## Questions
+
+* What is better: to use kubernetes with aws servers or my own server? Or maybe use my server as base that creates aws servers
