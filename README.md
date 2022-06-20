@@ -19,6 +19,7 @@ For example we can try to find posts on reddit connected to tweets.
 * Elastic search
 * BigQuery
 * Snowflake
+* Bash
 
 ## Theoretical architecture
 
@@ -29,6 +30,7 @@ For example we can try to find posts on reddit connected to tweets.
 * Use BigQuery to get data out of servers
 * Fast API will be used to send requests to server with project to get posts on reddit similar to tweets.
 * Hadoop to work with tweets database (maybe)
+* Learn the bash to install everything automatically.
 * I don't know a thing about Jenkins
 * I don't know a thing about Elasticsearch
 
