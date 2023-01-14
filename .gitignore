@@ -130,3 +130,5 @@ dmypy.json
 
 # My ignore
 .idea/
+configs
+data
