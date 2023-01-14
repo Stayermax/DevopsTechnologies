@@ -37,3 +37,4 @@ For example we can try to find posts on reddit connected to tweets.
 ## Questions
 
 * What is better: to use kubernetes with aws servers or my own server? Or maybe use my server as base that creates aws servers
+* Maybe Ansible will be used to deploy everything
