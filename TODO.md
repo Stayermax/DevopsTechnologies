@@ -1,9 +1,8 @@
 # TODO list:
 1. **Tweeting thing components** 
    1. Tweets streaming service
-   2. Tweets processing service
-   3. Postgres database
-   4. Dashboard with visualisation
+   2. Postgres database
+   3. Dashboard with visualisation
 2. **Dockerization:** 
    1. Dockerize streaming service
    2. Dockerize processing service
