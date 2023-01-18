@@ -41,15 +41,18 @@ class TwitterClient():
             "withheld"
         ]
 
-        found_tweeets = self.api.search_tweets(query="Israel", tweet_fields=all_fields, query_type='recent')
-        print(found_tweeets)
-        if found_tweeets is not None:
-            print(found_tweeets.includes)
-            for tweet in found_tweeets.data:
-                print(tweet.id)
-                print(tweet.text)
-                print(tweet.author_id)
-                print(tweet.geo)
-                print(tweet.lang)
-                print(tweet.public_metrics)
-                print(f'====')
+        # found_tweeets = self.api.search_tweets(query="Israel", tweet_fields=all_fields, query_type='recent')
+        # print(found_tweeets)
+        # if found_tweeets is not None:
+        #     print(found_tweeets.includes)
+        #     for tweet in found_tweeets.data:
+        #         print(tweet.id)
+        #         print(tweet.text)
+        #         print(tweet.author_id)
+        #         print(tweet.geo)
+        #         print(tweet.lang)
+        #         print(tweet.public_metrics)
+        #         print(type(tweet.attachments))
+        #         print(f'====')
+
+        a = self.api.get_tweets("1615787373304123392", tweet_fields=all_fields).data[0]

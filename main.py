@@ -1,5 +1,6 @@
 from connectors.postgres_connector import PostgresConnector
-from tweets_streaming_service.src.twitter_client import TwitterClient
+# from tweets_streaming_service.src.twitter_client import TwitterClient
+from tweets_streaming_service.src.twitter_client_v2 import TwitterClient
 import os
 import yaml
 import logging
