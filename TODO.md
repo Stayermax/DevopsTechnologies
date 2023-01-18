@@ -8,7 +8,7 @@
    2. Dockerize processing service
    3. Dockerize postgres
    4. Dockerize ui
-3. Ansible deployment of all services
+3. Ansible or Spinnaker deployment of all services
 4. **Connectors:**
    1. Implement spark connector 
    2. Implement csv connector
