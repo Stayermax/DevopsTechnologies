@@ -13,6 +13,8 @@ if __name__ == '__main__':
 
     # Use Twitter API
     twitter_client = TwitterClient('config/twitter_api_keys.yml')
-    twitter_client.search_tweets(query='israel')
+    # twitter_client.search_tweets(query='israel')
+    twitter_client.pagination_search(query='Israel')
+
     # twitter_client.get_user(username='StayermaxProj')
     # twitter_client.get_user_tweets()

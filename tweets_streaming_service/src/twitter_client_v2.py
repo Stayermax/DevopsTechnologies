@@ -77,6 +77,34 @@ class TwitterClient():
         json_pretty_print(all_tweets)
         logging.info(f"overall tweets collected: {len(all_tweets)}")
 
+    def pagination_search(self, query):
+        i = 0
+        all_fields = [
+            "attachments",
+            "author_id",
+            "context_annotations",
+            "conversation_id",
+            "created_at",
+            "entities",
+            "geo",
+            "id",
+            "in_reply_to_user_id",
+            "lang",
+            "possibly_sensitive",
+            "public_metrics",
+            "referenced_tweets",
+            "reply_settings",
+            "source",
+            "text",
+            "withheld"
+        ]
+        for tweet in tweepy.Paginator(self.client.search_recent_tweets, query ="israel", tweet_fields = all_fields,
+                                      max_results=10).flatten(limit=20):
+            json_pretty_print(tweet)
+            # if tweet['text'][-1]=='…':
+            #     json_pretty_print(tweet)
+            #     break
+
 
     def get_user(self, username: str):
         a = self.client.get_user(username=username)
